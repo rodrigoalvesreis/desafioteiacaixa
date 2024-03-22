@@ -5,7 +5,7 @@ import { DetalheComponent } from './pages/desafio/detalhe/detalhe.component';
 /*
 Definição de rotas das páginas
 Aqui cada url digitada no browser 
-será interceptada para exibir o componente correspondente
+será interceptada para exibir o componente (visão) correspondente
 */
 
 export const routes: Routes = [

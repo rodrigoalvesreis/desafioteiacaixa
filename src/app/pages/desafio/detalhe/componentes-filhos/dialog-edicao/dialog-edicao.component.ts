@@ -6,6 +6,9 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { AngularMaterialModule } from '../../../../../modules/angular-material/angular-material.module';
 import { CommonModule } from '@angular/common';
 
+/**
+ * Janela para edição de comentário a respeito de Photo
+ */
 @Component({
   selector: 'app-dialog-edicao',
   standalone: true,
@@ -18,13 +21,16 @@ export class DialogEdicaoComponent{
     @Inject(MAT_DIALOG_DATA) public data: Photo,
     public dialogRef: MatDialogRef<DialogEdicaoComponent>,
     private snackBar: MatSnackBar
-    ) { }
+    ) { }  
 
-
-  
-
+  /**
+   * Controle para validação do comentário
+   */
   comment = new FormControl(this.data.comment, Validators.required)
 
+  /**
+   * Salva o comentário
+   */
   salvar(){
     if(!this.comment.invalid){
       this.data.comment = String(this.comment.value)
@@ -35,6 +41,9 @@ export class DialogEdicaoComponent{
     }
   }
   
+  /**
+   * Fecha a janela sem salvar o comentário
+   */
   voltar(){
     this.dialogRef.close();
   }

@@ -42,6 +42,13 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 
+/**
+ * Importação da biblioteca AngularMaterial
+ * Este componente é opcional mas ajuda em um código mais limpo pois
+ * é o unico módulo que precisa ser importado nos componentes 
+ * que utilizarem a biblioteca
+ */
+
 @NgModule({
   declarations: [],
   imports: [

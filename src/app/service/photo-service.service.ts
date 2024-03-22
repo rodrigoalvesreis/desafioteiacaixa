@@ -3,6 +3,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 
+/**
+ * Consome a API sugerida para o desafio
+ */
 const httpOptions = {
   headers: new HttpHeaders(
     {
