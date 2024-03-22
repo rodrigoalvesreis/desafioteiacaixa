@@ -2,6 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
 
+<pre>
 Para implementar o desafio proposto, utilizei o Angular + AngularMaterial
 
 o projeto ficou organizado da seguinte forma:
@@ -24,7 +25,7 @@ MatTable: component AngularMaterial com as funcionalidades de ordenação e pagi
 Routing: estratégia de navegação entre as visões
 Reactive Forms: abordagem Model-Driven dos fomulários com validações e bindings embarcados 
 scss: extenção do css para elaborar interfaces responsivas com aproveitamento de código
-
+</pre>
 
 ## Development server
 
