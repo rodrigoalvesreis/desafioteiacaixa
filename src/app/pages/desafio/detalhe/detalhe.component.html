@@ -1,0 +1,20 @@
+<mat-card *ngIf="photo">
+    <mat-card-header>
+        <mat-card-title>Id: {{photo.id}}</mat-card-title>
+        <mat-card-subtitle>Album Id: {{photo.albumId}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{photo.url}}" alt="{{photo.title}}">
+    <mat-card-content>
+        <p>
+            {{photo.title}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-mini-fab color="accent" (click)="like()">
+                <mat-icon *ngIf="photo.liked">thumb_up</mat-icon>
+                <mat-icon *ngIf="!photo.liked">thumb_up_off_alt</mat-icon>
+        </button>
+        <button mat-mini-fab color="primary" (click)="comentar()"><mat-icon>comment</mat-icon></button>
+        <button mat-mini-fab color="primary" (click)="voltar()"><mat-icon>arrow_back</mat-icon></button>
+    </mat-card-actions>
+</mat-card>
